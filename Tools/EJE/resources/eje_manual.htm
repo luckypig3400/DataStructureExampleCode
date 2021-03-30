@@ -1,0 +1,924 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE"
+ content="text/html; charset=utf-8">
+  <title>EJE (Everyone's Java Editor) HOME PAGE</title>
+  <meta name="GENERATOR" content="OpenOffice.org 1.0.1  (Win32)">
+  <meta name="CREATED" content="20021020;12311042">
+  <meta name="CHANGED" content="20021021;19300485">
+</head>
+<body style="background-color: rgb(255, 255, 255);" lang="it-IT">
+<table align="center" border="1" width="800">
+  <tbody>
+    <tr>
+      <td width="1192" colspan="3">
+      <p align="center"><font color="#000000"
+ face="Arial, Helvetica, sans-serif" size="5"><i><b><font
+ color="#000080">User Manual</font></b></i></font></p>
+      <p align="left"><font color="#000000"
+ face="Arial, Helvetica, sans-serif" size="5"><i><b> EJE is a light and
+user-friendly editor for the Java programming language. Many others
+tools
+exist to write Java code, but they are often heavy weight IDE that need
+a relatively long time to learn, for a good usage. Besides, those tools
+need large system resources, that could be not necessary for your code
+or could not be present on your system. <br>
+EJE doesn't want to replace those tools, but could help you to write
+code quickly and in a customized way. It's been created for who wants
+to learn Java language but not a complex IDE. Infact is  freely
+downlodable together with an italian language java handbook:"Object
+Oriented &amp;&amp; Java 5" (more then 300000 downloads), at <a href="http://www.claudiodesio.com">http://www.claudiodesio.com</a>, or as support to the study with the "Java 8 Handbook" (Hoepli publishing) that you can buy <a href="http://www.hoepli.it/libro/manuale-di-java-8/9788820362911.html">here</a>.
+      </b></i></font></p>
+      <p align="left"><font color="#000000"
+ face="Arial, Helvetica, sans-serif" size="5"><i><b>The EJE 
+(version 3.3) main features are :</b></i></font></p>
+      <p align="left"><font color="#000000"
+ face="Arial, Helvetica, sans-serif" size="5"><i><b>1) You can compile
+and execute Java files directly from EJE (EJE supports packages
+and execution with args)<br>
+2) Multiple files support through tabs<br>
+3) Java syntax
+highlighting <br>
+4) File System fast explorer with tree, (supports multiple work
+directories)<br>
+5) Complete Key Navigability <br>
+6) You can undo and redo last action an unlimited number of times<br>
+7) Search &amp; replace utility<br>
+      </b></i></font><font color="#000000"
+ face="Arial, Helvetica, sans-serif" size="5"><i><b>8) Dynamic code
+fragments template insertions like properties, loops, constructors, exceptions, comments and many other (you can also select
+some text and then surround it with a code template)<br>
+9) Look and feel customization <br>
+10) Supports line numbering <br>
+11) You can set timers to be notified with specified time and messages</b></i></font><font
+ color="#000000" face="Arial, Helvetica, sans-serif" size="5"><i><b><br>
+12) Automatic introspection popup for members of declared objects<br>
+13) You can open the standard library documentation in an external
+browser <br>
+14) You can generate documentation of your own java source files
+automatically with javadoc utility<br>
+15) Automatic code alignment with C  or Java Style<br>
+16) Fast source file navigation<br>
+17) Supports lot of settings:&nbsp; font type, style and size,
+activate-deactivate introspection popup, braces style, java version
+target&nbsp; compilation, enable-disable assert, language,
+Look and feel (Nimbus style included), Line numbering, Java Development Kit, Documentation, Output Directory, Classpath and other...<br>
+      </b></i></font><font color="#000000"
+ face="Arial, Helvetica, sans-serif" size="5"><i><b>18) You can print
+your source files<br>
+      19) Internationalization (English, Italian, German and Spanish languages are actually supported). </b></i></font><font color="#000000"
+ face="Arial, Helvetica, sans-serif" size="5"><i><b><br>
+        20) Supports Java version 8</b></i></font><br>
+      </p>
+      <p align="left"><font color="#000000"
+ face="Arial, Helvetica, sans-serif" size="5"><i><b> The EJE user
+interface is very simple and user-friendly. Figure 1) give you a
+snapshot of EJE in action:</b></i></font></p>
+      <p align="center"><img src="images/fig_1.png" width="780" height="475" alt="EJE in action!"></p>
+      <p align="center"><b><i><font color="#000000"
+ face="Arial, Helvetica, sans-serif" size="5">Fig. 1</font></i></b></p>
+      <p align="left"><em><strong><font
+ face="Arial, Helvetica, sans-serif" size="5">The panel 1 shows the
+directory tree of your file system. The contents will not be visible if
+there's no Java source files. Just one click to open Java source file
+in panel 2.</font></strong></em></p>
+      <p align="left"><em><strong><font
+ face="Arial, Helvetica, sans-serif" size="5">The panel 2 shows the
+opened files. </font></strong></em></p>
+      <p align="left"><em><strong><font
+ face="Arial, Helvetica, sans-serif" size="5">The panel 3 shows the
+messages that your processes (as compilation or execution) will send
+you.</font></strong></em></p>
+      <p align="left"><em><strong><font
+ face="Arial, Helvetica, sans-serif" size="5">Then follow a descriptive
+table for the main EJE commands (most of the icons used in EJE come from the <a
+ href="http://www.famfamfam.com/lab/icons/silk/">Silk Icons</a> collection... Special thanks to Fabio M. Antoniali for his contributions in development (and  his suggestions) to make EJE better):<br>
+Note: For people who needs support of screen reading software like Jaws, please download <a href="http://www.oracle.com/technetwork/java/javase/tech/accessbridge-138720.html" target="_blank"><font color="#000000">Java Access Bridge</font></a>.
+      </font></strong></em></p>
+      <table style="width: 100%;" border="1">
+        <tbody>
+          <tr>
+            <th width="19%">Command</th>
+            <th width="6%">Icon</th>
+            <th width="34%">Where you can find it</th>
+            <th width="13%">Short-cut</th>
+            <th width="28%">Sinopsys</th>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">New</div></td>
+            <td>
+              <div align="center"><img src="images/new.png" height="16"
+ width="16"></div></td>
+            <td>
+              <div align="center">File menu, tool bar</div></td>
+            <td>
+              <div align="center">CTRL-N</div></td>
+            <td>
+              <div align="center">Create a new file</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Open</div></td>
+            <td>
+              <div align="center"><img src="images/open.png" height="16"
+ width="16"></div></td>
+            <td>
+              <div align="center">File menu, tool bar</div></td>
+            <td>
+              <div align="center">CTRL-O</div></td>
+            <td>
+              <div align="center">Open a file in your file system</div></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">
+              <div align="center">Recent Files...<br>
+                </div></td>
+            <td style="vertical-align: top;">
+              <div align="center"><br>
+                </div></td>
+            <td style="vertical-align: top;">
+              <div align="center">File menu<br>
+                </div></td>
+            <td style="vertical-align: top;">
+              <div align="center"><br>
+                </div></td>
+            <td style="vertical-align: top;">
+              <div align="center">Open a recently opened file<br>
+                </div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Save</div></td>
+            <td>
+              <div align="center"><img src="images/save.png" height="16"
+ width="16"></div></td>
+            <td>
+              <div align="center">File menu, tool bar, popup menu</div></td>
+            <td>
+              <div align="center">CTRL-S</div></td>
+            <td>
+              <div align="center">Save current file</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Sava All</div></td>
+            <td>
+              <div align="center"><img src="images/saveall.png"
+ height="16" width="16"></div></td>
+            <td>
+              <div align="center">File menu, tool bar</div></td>
+            <td>
+              <div align="center">CTRL-SHIFT-S</div></td>
+            <td>
+              <div align="center">Save all opened files</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Save As</div></td>
+            <td>
+              <div align="center"><img src="images/saveas.png" height="16"
+ width="16"></div></td>
+            <td>
+              <div align="center">File menu</div></td>
+            <td> <div align="center"><br>            
+            </div></td>
+            <td>
+              <div align="center">Save a file with a name</div></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">
+              <div align="center">Print...</div></td>
+            <td style="vertical-align: top;">
+              <div align="center"><img alt="" src="images/print.png"
+ style="width: 16px; height: 16px;"></div></td>
+            <td style="vertical-align: top;">
+              <div align="center">File menu, tool bar</div></td>
+            <td style="vertical-align: top;">
+              <div align="center">CTRL-P</div></td>
+            <td style="vertical-align: top;">
+              <div align="center">Print the current file<br>
+                </div></td>
+          </tr>
+          <tr>
+            <td style="text-align: center;"><div align="center">Options<br>            
+            </div></td>
+            <td style="text-align: center;"><div align="center"><img alt=""
+ src="images/options.png" style="width: 16px; height: 16px;"><br>            
+            </div></td>
+            <td style="vertical-align: top; text-align: center;"><div align="center">File
+              menu<br>            
+            </div></td>
+            <td style="vertical-align: top; text-align: center;"><div align="center">F12<br>            
+            </div></td>
+            <td style="vertical-align: top; text-align: center;"><div align="center">Open
+              the options dialog<br>            
+            </div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Close File</div></td>
+            <td>
+              <div align="center"><img src="images/close.png" height="14"
+ width="16"></div></td>
+            <td>
+              <div align="center">File menu, popup menu</div></td>
+            <td>
+              <div align="center">CTRL-SHIFT-Q</div></td>
+            <td>
+              <div align="center">Close current file</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Quit</div></td>
+            <td>
+              <div align="center"><img src="images/quit.png" height="16"
+ width="16"></div></td>
+            <td>
+              <div align="center">File menu</div></td>
+            <td>
+              <div align="center">CTRL-Q</div></td>
+            <td>
+              <div align="center">Quit EJE</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Undo</div></td>
+            <td>
+              <div align="center"><img src="images/undo.png" height="16"
+ width="16"></div></td>
+            <td>
+              <div align="center">Edit menu, tool bar</div></td>
+            <td>
+              <div align="center">CTRL-Z</div></td>
+            <td>
+              <div align="center">Undo last action</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Redo</div></td>
+            <td>
+              <div align="center"><img src="images/redo.png" height="16"
+ width="16"></div></td>
+            <td>
+              <div align="center">Edit menu, tool bar</div></td>
+            <td>
+              <div align="center">CTRL-Y</div></td>
+            <td>
+              <div align="center">Redo last action</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Cut</div></td>
+            <td>
+              <div align="center"><img src="images/cut.png" height="16"
+ width="16"></div></td>
+            <td>
+              <div align="center">Edit menu, tool bar, popup menu</div></td>
+            <td>
+              <div align="center">CTRL-X</div></td>
+            <td>
+              <div align="center">Move selection to clipboard</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Copy</div></td>
+            <td>
+              <div align="center"><img src="images/copy.png" height="16"
+ width="16"></div></td>
+            <td>
+              <div align="center">Edit menu, tool bar, popup menu</div></td>
+            <td>
+              <div align="center">CTRL-C</div></td>
+            <td>
+              <div align="center">Copy selection to clipboard</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Paste</div></td>
+            <td>
+              <div align="center"><img src="images/paste.png" height="16"
+ width="16"></div></td>
+            <td>
+              <div align="center">Edit menu, tool bar, popup menu</div></td>
+            <td>
+              <div align="center">CTRL-V</div></td>
+            <td>
+              <div align="center">Paste from clipboard</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Delete</div></td>
+            <td>
+              <div align="center"><img src="images/delete.png" height="16"
+ width="16"></div></td>
+            <td>
+              <div align="center">Edit menu, popup menu</div></td>
+            <td> <div align="center"><br>            
+            </div></td>
+            <td>
+              <div align="center">Delete selection</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Select All</div></td>
+            <td>
+              <div align="center"><img src="images/selectall.png"
+ height="16" width="16"></div></td>
+            <td>
+              <div align="center">Edit menu, popup menu</div></td>
+            <td>
+              <div align="center">CTRL-A</div></td>
+            <td>
+              <div align="center">Select all text</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">To Upper Case</div></td>
+            <td>
+              <div align="center"><img src="images/up.png" height="16"
+ width="16"></div></td>
+            <td>
+              <div align="center">Edit menu, popup menu</div></td>
+            <td>
+              <div align="center">CTRL-U</div></td>
+            <td>
+              <div align="center">Make selection upper case</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">To Lower Case</div></td>
+            <td>
+              <div align="center"><img src="images/down.png" height="16"
+ width="15"></div></td>
+            <td>
+              <div align="center">Edit menu, popup menu</div></td>
+            <td>
+              <div align="center">CTRL-L</div></td>
+            <td>
+              <div align="center">Make selection lower case</div></td>
+          </tr>
+          <tr>
+          <tr>
+            <td>
+              <div align="center">Invert Upper-Lower</div></td>
+            <td>
+              <div align="center"><img src="images/refresh.png" height="16"
+ width="15"></div></td>
+            <td>
+              <div align="center">Edit menu, popup menu</div></td>
+            <td>
+              <div align="center">CTRL-L</div></td>
+            <td>
+              <div align="center">Invert lower and upper case in selected text</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Find</div></td>
+            <td>
+              <div align="center"><img src="images/find.png" height="16"
+ width="16"></div></td>
+            <td>
+              <div align="center">Search menu, tool bar</div></td>
+            <td>
+              <div align="center">CTRL-F</div></td>
+            <td>
+              <div align="center">Find expressions in text</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Find Next</div></td>
+            <td>
+              <div align="center"><img src="images/findnext.png"
+ height="16" width="16"></div></td>
+            <td>
+              <div align="center">Search menu</div></td>
+            <td>
+              <div align="center">F3</div></td>
+            <td>
+              <div align="center">Find next expressions in text</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Replace</div></td>
+            <td>
+              <div align="center"><img src="images/replace.png"
+ height="16" width="16"></div></td>
+            <td>
+              <div align="center">Search menu</div></td>
+            <td>
+              <div align="center">CTRL-H</div></td>
+            <td>
+              <div align="center">Find and replace expressions in text</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Goto</div></td>
+            <td>
+              <div align="center"><img src="images/goto.png" height="16"
+ width="16"></div></td>
+            <td>
+              <div align="center">Search menu</div></td>
+            <td>
+              <div align="center">CTRL-G</div></td>
+            <td>
+              <div align="center">Move cursor to a specified line</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Class template</div></td>
+            <td>
+              <div align="center"><img src="images/lightning_add.png" height="16"
+ width="16"></div></td>
+            <td>
+              <div align="center">Insert menu</div></td>
+            <td>
+              <div align="center">CTRL-0</div></td>
+            <td>
+              <div align="center">Insert (or surround selected text with)
+              a class template</div></td>
+          </tr>
+          <tr>
+            <td><div align="center">Interface template</div></td>
+            <td><div align="center"><img src="images/lightning_add.png" alt="blu"
+ width="16" height="16"></div></td>
+            <td><div align="center">Insert menu</div></td>
+            <td><div align="center">CTRL-1</div></td>
+            <td><div align="center">Insert (or surround selected text with)
+              a interface template</div></td>
+          </tr>
+          <tr>
+            <td><div align="center">Emumeration template</div></td>
+            <td><div align="center"><img src="images/lightning_add.png" alt="blu"
+ width="16" height="16"></div></td>
+            <td><div align="center">Insert menu</div></td>
+            <td><div align="center">CTRL-2</div></td>
+            <td><div align="center">Insert (or surround selected text with)
+              a enumeration template</div></td>
+          </tr>
+          <tr>
+            <td><div align="center">Annotation template</div></td>
+            <td><div align="center"><img src="images/lightning_add.png" alt="blu"
+ width="16" height="16"></div></td>
+            <td><div align="center">Insert menu</div></td>
+            <td><div align="center">CTRL-3</div></td>
+            <td><div align="center">Insert (or surround selected text with)
+              a Annotation template</div></td>
+          </tr>
+          <tr>
+            <td><div align="center">Constructor</div></td>
+            <td><div align="center"><img src="images/lightning_add.png" alt="blu"
+ width="16" height="16"></div></td>
+            <td><div align="center">Insert menu</div></td>
+            <td><div align="center">CTRL-4</div></td>
+            <td><div align="center">Insert (or surround selected text with)
+              with simple constructor</div></td>
+          </tr>
+          <tr>
+            <td><div align="center">Constructor with Args</div></td>
+            <td><div align="center"><img src="images/brick_add.png" alt="ylw"
+ width="16" height="16"></div></td>
+            <td><div align="center">Insert menu</div></td>
+            <td><div align="center">CTRL-5</div></td>
+            <td><div align="center">Open a wizard to create a constructor with parameters.</div></td>
+          </tr>
+          <tr>
+            <td><div align="center">Main method</div></td>
+            <td><div align="center"><img src="images/lightning_add.png" alt="blu"
+ width="16" height="16"></div></td>
+            <td><div align="center">Insert menu</div></td>
+            <td><div align="center">CTRL-6</div></td>
+            <td><div align="center">Insert (or surround selected text with)
+              a main method template</div></td>
+          </tr>
+          <tr>
+            <td><div align="center">JavaBean Property</div></td>
+            <td><div align="center"><img src="images/brick_add.png" alt="ylw"
+ width="16" height="16"></div></td>
+            <td><div align="center">Insert menu</div></td>
+            <td><div align="center">CTRL-7</div></td>
+            <td><div align="center">Open a wizard to create JavaBean
+              Property</div></td>
+          </tr>
+          <tr>
+            <td><div align="center">Constant</div></td>
+            <td><div align="center">
+              <div align="center"><img src="images/brick_add.png" alt="ylw"
+ width="16" height="16"></div>
+            </div></td>
+            <td><div align="center">Insert menu</div></td>
+            <td><div align="center">CTRL-8</div></td>
+            <td><div align="center">Open a wizard to create a simple costant.</div></td>
+          </tr>
+          <tr>
+            <td><div align="center">Singleton</div></td>
+            <td><div align="center"><img src="images/lightning_add.png" alt="blu"
+ width="16" height="16"></div></td>
+            <td><div align="center">Insert menu</div></td>
+            <td><div align="center">CTRL-9</div></td>
+            <td><div align="center">Creates the structore for a singleton class.</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">If</div></td>
+            <td>
+              <div align="center"><img src="images/lightning_add.png" height="16"
+ width="16"></div></td>
+            <td>
+              <div align="center">Insert menu</div></td>
+            <td><div align="center">CTRL-F1</div></td>
+            <td>
+              <div align="center">Insert (or surround selected text with)
+              an if template</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Switch</div></td>
+            <td>
+              <div align="center"><img src="images/lightning_add.png" height="16"
+ width="16"></div></td>
+            <td>
+              <div align="center">Insert menu</div></td>
+            <td><div align="center">CTRL-F2</div></td>
+            <td>
+              <div align="center">Insert (or surround selected text with)
+              a switch template</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">For</div></td>
+            <td>
+              <div align="center"><img src="images/lightning_add.png" height="16"
+ width="16"></div></td>
+            <td>
+              <div align="center">Insert menu</div></td>
+            <td><div align="center">CTRL-F3</div></td>
+            <td>
+              <div align="center">Insert (or surround selected text with)
+              a for template</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">While</div></td>
+            <td>
+              <div align="center"><img src="images/lightning_add.png" height="16"
+ width="16"></div></td>
+            <td>
+              <div align="center">Insert menu</div></td>
+            <td><div align="center">CTRL-F4</div></td>
+            <td>
+              <div align="center">Insert (or surround selected text with)
+              a while template</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Do While</div></td>
+            <td>
+              <div align="center"><img src="images/lightning_add.png" height="16"
+ width="16"></div></td>
+            <td>
+              <div align="center">Insert menu</div></td>
+            <td><div align="center">CTRL-F5</div></td>
+            <td>
+              <div align="center">Insert (or surround selected text with)
+              a do-while template</div></td>
+          </tr>
+          <tr>
+            <td><div align="center">For Each</div></td>
+            <td><div align="center"><img src="images/lightning_add.png" height="16"
+ width="16"></div></td>
+            <td><div align="center">Insert menu</div></td>
+            <td><div align="center">CTRL-F6</div></td>
+            <td><div align="center">Insert (or surround selected text with)
+              a enanched for template</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Try/catch</div></td>
+            <td>
+              <div align="center"><img src="images/lightning_add.png" height="16"
+ width="16"></div></td>
+            <td>
+              <div align="center">Insert menu</div></td>
+            <td>
+              <div align="center">CTRL-F7</div></td>
+            <td>
+              <div align="center">Insert (or surround selected text with)
+              a try-catch template</div></td>
+          </tr>
+<tr>
+            <td><div align="center">(...)</div></td>
+            <td><div align="center"><img src="images/lightning_add.png" alt="blu"
+ width="16" height="16"></div></td>
+            <td><div align="center">Insert menu</div></td>
+            <td><div align="center">CTRL-F8</div></td>
+            <td><div align="center">Insert (or surround selected text with)
+              a round brackets block.</div></td>
+          </tr>
+          <tr>
+            <td><div align="center">[...]</div></td>
+            <td><div align="center"><img src="images/lightning_add.png" alt="blu"
+ width="16" height="16"></div></td>
+            <td><div align="center">Insert menu</div></td>
+            <td><div align="center">CTRL-F9</div></td>
+            <td><div align="center">Insert (or surround selected text with)
+              a square brackets block.</div></td>
+          </tr>
+          <tr>
+            <td><div align="center">(...)</div></td>
+            <td><div align="center"><img src="images/lightning_add.png" alt="blu"
+ width="16" height="16"></div></td>
+            <td><div align="center">Insert menu</div></td>
+            <td><div align="center">CTRL-F10</div></td>
+            <td><div align="center">Insert (or surround selected text with)
+              a curly braces block.</div></td>
+          </tr>
+          <tr>
+            <td><div align="center">System.out.println()</div></td>
+            <td><div align="center"><img src="images/lightning_add.png" alt="blu"
+ width="16" height="16"></div></td>
+            <td><div align="center">Insert menu</div></td>
+            <td><div align="center">CTRL-F8</div></td>
+            <td><div align="center">Prints System.out.println();</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Box Comment</div></td>
+            <td><div align="center"><img src="images/comment_selection.png" alt="red" width="16" height="16"></div></td>
+            <td>
+              <div align="center">Insert menu</div></td>
+            <td>
+              <div align="center">CTRL-F9</div></td>
+            <td>
+              <div align="center">Insert (or surround selected text with)
+              a comment template</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Next File</div></td>
+            <td>
+              <div align="center"><img src="images/next_file.png"
+ height="16" width="16"></div></td>
+            <td>
+              <div align="center">View menu, tool bar</div></td>
+            <td>
+              <div align="center">F5</div></td>
+            <td>
+              <div align="center">Select the next file</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Previous File</div></td>
+            <td>
+              <div align="center"><img src="images/previous_file.png"
+ height="16" width="16"></div></td>
+            <td>
+              <div align="center">View menu, tool bar</div></td>
+            <td>
+              <div align="center">F4</div></td>
+            <td>
+              <div align="center">Select the previous file</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Tool Bar</div></td>
+            <td> <div align="center"><br>            
+            </div></td>
+            <td>
+              <div align="center">View menu</div></td>
+            <td> <div align="center"><br>            
+            </div></td>
+            <td>
+              <div align="center">Hide-view tool bar</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Status Bar</div></td>
+            <td> <div align="center"><br>            
+            </div></td>
+            <td>
+              <div align="center">View menu</div></td>
+            <td> <div align="center"><br>            
+            </div></td>
+            <td>
+              <div align="center">Hide-view status bar</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Choose Work Directory</div></td>
+            <td>
+              <div align="center"><img src="images/folder.png" height="16"
+ width="16"></div></td>
+            <td>
+              <div align="center">Tools menu, tree popup menu</div></td>
+            <td> <div align="center"><br>            
+            </div></td>
+            <td>
+              <div align="center">Allow you to choose a work directory
+              that will be opened in the panel 1 directory tree</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Compile All<br>
+                </div></td>
+            <td>
+              <div align="center"><img alt="" src="images/compile_all.png"
+ style="width: 16px; height: 16px;"></div></td>
+            <td>
+              <div align="center">Build menu, tool bar, popup menu</div></td>
+            <td>
+              <div align="center">SHIFT-F7</div></td>
+            <td>
+              <div align="center">Compile all current files</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Compile</div></td>
+            <td>
+              <div align="center"><img src="images/compile.png"
+ height="16" width="16"></div></td>
+            <td>
+              <div align="center">Build menu, tool bar, popup menu</div></td>
+            <td>
+              <div align="center">F7</div></td>
+            <td>
+              <div align="center">Compile current file</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Execute</div></td>
+            <td>
+              <div align="center"><img src="images/execute.png"
+ height="16" width="16"></div></td>
+            <td>
+              <div align="center">Build menu, tool bar, popup menu</div></td>
+            <td>
+              <div align="center">F9</div></td>
+            <td>
+              <div align="center">Execute current file</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Execute With Args</div></td>
+            <td>
+              <div align="center"><img src="images/execute_args.png"
+ height="16" width="16"></div></td>
+            <td>
+              <div align="center">Build menu</div></td>
+            <td>
+              <div align="center">SHIFT-F9</div></td>
+            <td>
+              <div align="center">Execute current file with args</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Stop Processing</div></td>
+            <td>
+              <div align="center"><img src="images/stop.png" height="16"
+ width="16"></div></td>
+            <td>
+              <div align="center">Build menu, tool bar</div></td>
+            <td> <div align="center"><br>            
+            </div></td>
+            <td>
+              <div align="center">Stop current process</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Alarm Clock</div></td>
+            <td>
+              <div align="center"><img src="images/clock.png" height="16"
+ width="16"></div></td>
+            <td>
+              <div align="center">Tools menu</div></td>
+            <td> <div align="center"><br>            
+            </div></td>
+            <td>
+              <div align="center">Allow you to set a timeout to show you
+              a message</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Resources Monitor</div></td>
+            <td>
+              <div align="center"><img src="images/memory.png" height="16"
+ width="16"></div></td>
+            <td>
+              <div align="center">Tools menu</div></td>
+            <td> <div align="center"><br>            
+            </div></td>
+            <td>
+              <div align="center">Shows the allocated memory and used
+              memory by EJE</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Format code</div></td>
+            <td>
+              <div align="center"><img src="images/format.png" height="16"
+ width="15"></div></td>
+            <td>
+              <div align="center">Build menu, tool bar, popup menu</div></td>
+            <td>
+              <div align="center">CTRL-SHIFT-F</div></td>
+            <td>
+              <div align="center">Format the source code</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Generate Documentation</div></td>
+            <td>
+              <div align="center"><img src="images/javadoc.png"
+ height="16" width="16"></div></td>
+            <td>
+              <div align="center">Tools menu</div></td>
+            <td> <div align="center"><br>            
+            </div></td>
+            <td>
+              <div align="center">Generate current file javadoc
+              documentation</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Comment Selection</div></td>
+            <td>
+              <div align="center"><img src="images/comment_selection.png"
+ height="16" width="16"></div></td>
+            <td>
+              <div align="center">Tools menu</div></td>
+            <td>
+              <div align="center">CTRL-SHIFT-C</div></td>
+            <td>
+              <div align="center">Comment selected text</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Application Help Contents</div></td>
+            <td>
+              <div align="center"><img src="images/contents.png"
+ height="16" width="16"></div></td>
+            <td>
+              <div align="center">Help menu</div></td>
+            <td>
+              <div align="center">F1</div></td>
+            <td>
+              <div align="center">Shows this user guide</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">Java Documentation</div></td>
+            <td>
+              <div align="center"><img src="images/javacup.png"
+ height="16" width="16"></div></td>
+            <td>
+              <div align="center">Help Menu</div></td>
+            <td>
+              <div align="center">F2</div></td>
+            <td>
+              <div align="center">Shows the standard library documentation</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">About EJE</div></td>
+            <td>
+              <div align="center"><img src="images/about.png" height="16"
+ width="16"></div></td>
+            <td>
+              <div align="center">Help menu</div></td>
+            <td>
+              <div align="center">CTRL-F1</div></td>
+            <td>
+              <div align="center">Shows EJE info</div></td>
+          </tr>
+        </tbody>
+      </table>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="5">Thanks to Leonardo Furino<br><strong><em>Enjoy
+with EJE!<br>
+      </em></strong></font></p>
+            <table
+ style="margin-left: auto; margin-right: auto; width: 100%; text-align: left;"
+ border="1" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td
+ style="width: 50%; height: 50%; vertical-align: top; text-align: center;"><strong><span
+ style="text-decoration: underline;">Claudio De Sio Cesari</span><br>
+            </strong><A href="http://www.claudiodesio.com">http://www.claudiodesio.com</A>
+                    <br>
+<A href="mailto:claudio@claudiodesio.com?subject=EJE">claudio@claudiodesio.com</A>
+                  </td>
+            <td
+ style="width: 50%; height: 50%; vertical-align: top; text-align: center;"><strong><span
+ style="text-decoration: underline;">EJE</span></strong><br>
+            <A href="http://sourceforge.net/projects/eje/">http://sourceforge.net/projects/eje/</A><br>
+<A href="mailto:eje@claudiodesio.com?subject=EJE">eje@claudiodesio.com</A></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

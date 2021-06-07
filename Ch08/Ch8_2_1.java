@@ -1,41 +1,42 @@
-/* µ{¦¡½d¨Ò: Ch8_2_1.java */ 
+
+/* ç¨‹å¼ç¯„ä¾‹: Ch8_2_1.java */
 import java.io.*;
+
 public class Ch8_2_1 {
-   // ¤èªk: ªwªj±Æ§Çªk
+   // æ–¹æ³•: æ³¡æ²«æŽ’åºæ³•
    static void bubbleSort(char[] data) {
-      int i,j;                        // ÅÜ¼Æ«Å§i
-      int count = data.length;        // ¨ú±o°}¦C¤Ø¤o
+      int i, j; // è®Šæ•¸å®£å‘Š
+      int count = data.length; // å–å¾—é™£åˆ—å°ºå¯¸
       char temp;
-      for ( j = count; j > 1; j-- ) { // ²Ä¤@¼h°j°é
-         for ( i = 0; i < j - 1; i++ )// ²Ä¤G¼h°j°é
-            // ¤ñ¸û¬Û¾Fªº°}¦C¤¸¯À
-            if ( data[i+1] < data[i] ) {
-               temp = data[i+1];      // ¥æ´«°}¦C¤¸¯À
-               data[i+1] = data[i];
+      for (j = count; j > 1; j--) { // ç¬¬ä¸€å±¤è¿´åœˆ
+         for (i = 0; i < j - 1; i++)// ç¬¬äºŒå±¤è¿´åœˆ
+            // æ¯”è¼ƒç›¸é„°çš„é™£åˆ—å…ƒç´ 
+            if (data[i + 1] < data[i]) {
+               temp = data[i + 1]; // äº¤æ›é™£åˆ—å…ƒç´ 
+               data[i + 1] = data[i];
                data[i] = temp;
             }
-         // Åã¥Ü²Ä¤@¼h°j°é°õ¦æ«á¥æ´«ªº¦r¦ê
-         System.out.print(count-j+1);
+         // é¡¯ç¤ºç¬¬ä¸€å±¤è¿´åœˆåŸ·è¡Œå¾Œäº¤æ›çš„å­—ä¸²
+         System.out.print(count - j + 1);
          System.out.println(": " + new String(data));
       }
    }
-   // ¥Dµ{¦¡
-   public static void main(String[] args)
-                                    throws Exception {
-      String str;                   // ÅÜ¼Æ«Å§i
+
+   // ä¸»ç¨‹å¼
+   public static void main(String[] args) throws Exception {
+      String str; // è®Šæ•¸å®£å‘Š
       int len;
-      // «Ø¥ßBufferedReaderªº¿é¤J¦ê¬yª«¥ó
-      BufferedReader input = new BufferedReader(
-                     new InputStreamReader(System.in));
-      System.out.print("½Ð¿é¤J±Æ§Ç¦r¦ê:");
-      System.out.flush();           // ²M°£½w½Ä°Ï
-      str = input.readLine();       // Åª¨ú¤@¦C
-      input.close();                // Ãö³¬¦ê¬y
-      len = str.length();           // ¨ú±o¦r¦êªø«×
-      char[] data = new char[len];  // ¦r¤¸°}¦C«Å§i
-      data = str.toCharArray();     // Âà´«¦¨°}¦C
-      bubbleSort(data);             // °õ¦æªwªj±Æ§Çªk
-      // Åã¥Ü±Æ§Ç«á¦r¦ê
-      System.out.println("±Æ§Ç«á¦r¦ê:"+new String(data));
+      // å»ºç«‹BufferedReaderçš„è¼¸å…¥ä¸²æµç‰©ä»¶
+      BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+      System.out.print("è«‹è¼¸å…¥æŽ’åºå­—ä¸²:");
+      System.out.flush(); // æ¸…é™¤ç·©è¡å€
+      str = input.readLine(); // è®€å–ä¸€åˆ—
+      input.close(); // é—œé–‰ä¸²æµ
+      len = str.length(); // å–å¾—å­—ä¸²é•·åº¦
+      char[] data = new char[len]; // å­—å…ƒé™£åˆ—å®£å‘Š
+      data = str.toCharArray(); // è½‰æ›æˆé™£åˆ—
+      bubbleSort(data); // åŸ·è¡Œæ³¡æ²«æŽ’åºæ³•
+      // é¡¯ç¤ºæŽ’åºå¾Œå­—ä¸²
+      System.out.println("æŽ’åºå¾Œå­—ä¸²:" + new String(data));
    }
 }

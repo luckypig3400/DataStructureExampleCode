@@ -1,43 +1,43 @@
-/* µ{¦¡½d¨Ò: Ch8_2_2.java */ 
+/* ç¨‹å¼ç¯„ä¾‹: Ch8_2_2.java */ 
 import java.io.*;
 public class Ch8_2_2 {
-   // ¤èªk: ¿ï¾Ü±Æ§Çªk
+   // æ–¹æ³•: é¸æ“‡æ’åºæ³•
    static void selectSort(char[] data) {
-      int i, j, pos;                  // pos³Ì¤p¦r¤¸¯Á¤Ş
-      int count = data.length;        // ¨ú±o°}¦C¤Ø¤o
+      int i, j, pos;                  // posæœ€å°å­—å…ƒç´¢å¼•
+      int count = data.length;        // å–å¾—é™£åˆ—å°ºå¯¸
       char temp;
-      for ( i = 0; i < count - 1; i++ ) { // ²Ä¤@¼h°j°é
+      for ( i = 0; i < count - 1; i++ ) { // ç¬¬ä¸€å±¤è¿´åœˆ
          pos = i;
          temp = data[pos];
-         // §ä´M³Ì¤p¦r¤¸ªº°j°é
-         for ( j = i + 1; j < count; j++ )// ²Ä¤G¼h°j°é
-            if ( data[j] < temp ) {       // ¬O§_§ó¤p
-               pos = j;                   // §ä¨ì³Ì¤p¦r¤¸
+         // æ‰¾å°‹æœ€å°å­—å…ƒçš„è¿´åœˆ
+         for ( j = i + 1; j < count; j++ )// ç¬¬äºŒå±¤è¿´åœˆ
+            if ( data[j] < temp ) {       // æ˜¯å¦æ›´å°
+               pos = j;                   // æ‰¾åˆ°æœ€å°å­—å…ƒ
                temp = data[j];
             }
-         data[pos] = data[i];             // ¥æ´«¨â­Ó¦r¤¸
+         data[pos] = data[i];             // äº¤æ›å…©å€‹å­—å…ƒ
          data[i] = temp;
-         // Åã¥Ü²Ä¤@¼h°j°é°õ¦æ«á¥æ´«ªº¦r¦ê
+         // é¡¯ç¤ºç¬¬ä¸€å±¤è¿´åœˆåŸ·è¡Œå¾Œäº¤æ›çš„å­—ä¸²
          System.out.println(i+1 + ": "+new String(data));
       }
    }
-   // ¥Dµ{¦¡
+   // ä¸»ç¨‹å¼
    public static void main(String[] args)
                                     throws Exception {
-      String str;                   // ÅÜ¼Æ«Å§i
+      String str;                   // è®Šæ•¸å®£å‘Š
       int len;
-      // «Ø¥ßBufferedReaderªº¿é¤J¦ê¬yª«¥ó
+      // å»ºç«‹BufferedReaderçš„è¼¸å…¥ä¸²æµç‰©ä»¶
       BufferedReader input = new BufferedReader(
                      new InputStreamReader(System.in));
-      System.out.print("½Ğ¿é¤J±Æ§Ç¦r¦ê:");
-      System.out.flush();           // ²M°£½w½Ä°Ï
-      str = input.readLine();       // Åª¨ú¤@¦C
-      input.close();                // Ãö³¬¦ê¬y
-      len = str.length();           // ¨ú±o¦r¦êªø«×
-      char[] data = new char[len];  // ¦r¤¸°}¦C«Å§i
-      data = str.toCharArray();     // Âà´«¦¨°}¦C
-      selectSort(data);             // °õ¦æ¿ï¾Ü±Æ§Çªk
-      // Åã¥Ü±Æ§Ç«á¦r¦ê
-      System.out.println("±Æ§Ç«á¦r¦ê:"+new String(data));
+      System.out.print("è«‹è¼¸å…¥æ’åºå­—ä¸²:");
+      System.out.flush();           // æ¸…é™¤ç·©è¡å€
+      str = input.readLine();       // è®€å–ä¸€åˆ—
+      input.close();                // é—œé–‰ä¸²æµ
+      len = str.length();           // å–å¾—å­—ä¸²é•·åº¦
+      char[] data = new char[len];  // å­—å…ƒé™£åˆ—å®£å‘Š
+      data = str.toCharArray();     // è½‰æ›æˆé™£åˆ—
+      selectSort(data);             // åŸ·è¡Œé¸æ“‡æ’åºæ³•
+      // é¡¯ç¤ºæ’åºå¾Œå­—ä¸²
+      System.out.println("æ’åºå¾Œå­—ä¸²:"+new String(data));
    }
 }
